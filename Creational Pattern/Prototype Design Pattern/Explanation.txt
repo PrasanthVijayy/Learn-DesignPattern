@@ -1,0 +1,8 @@
+👉 PROTOTYPE DESIGN PATTERN - CREATIONAL PATTERN 👈
+------------------------------------
+
+Prototype is another creational design pattern, like Factory and Builder pattern.
+
+It is used to create objects by cloning from existing objects instead of creating from scratch without making code 
+dependent on their classes.
+
