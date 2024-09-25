@@ -1,0 +1,8 @@
+👉 BUILDER DESIGN PATTERN - CREATIONAL PATTERN 👈
+------------------------------------
+
+The Builder Pattern is used to create complex objects step-by-step. 
+
+It’s especially helpful when the object you’re creating has many parts or options, and you don’t want to pass everything into the constructor at once. 
+
+Instead, you build the object piece by piece, allowing flexibility and clarity.
