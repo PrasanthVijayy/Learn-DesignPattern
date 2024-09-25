@@ -1,0 +1,19 @@
+👉 SINGLETON DESIGN PATTERN - CREATIONAL PATTERN 👈
+------------------------------------
+
+The Singleton pattern ensures that a "class has only one instance" and provides a "global point of access to that instance".
+
+This pattern is useful when exactly one object is needed to coordinate actions or manage resources across an application. 
+
+It promotes controlled access and consistency by allowing only a single instance of the class to exist.
+
+
+👉 KEY POINTS 👈
+-----------------
+Key Points of Singleton Pattern
+
+Single Instance: Guarantees that only one instance of the class is created.
+
+Global Access: Provides a global point of access to that instance.
+
+Lazy Initialization: The instance is created only when it's needed, rather than at the start.
