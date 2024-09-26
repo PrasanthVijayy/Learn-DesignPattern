@@ -26,3 +26,15 @@ Example:
     » Then Sugar class as additional 2/-
     » Finally Ice class with additonal 1/-
     » If we run it, the cost is getting added up setup by step!
+
+3️⃣ Facade Pattern:
+
+    » The Facade design pattern which provides a simplifed interface to complex subsystem.
+
+Example:
+
+    » Here I created a homeTheatre setup with 5 subsystems.
+    » Subsytems are: Lights, Projector, DVD player, Snacks, SoundSystem.
+    » Here I just created simple functionality to all subsystems as separate files.
+    » With Facade pattern (movieFacade.js) I made all interactions simple before bring to client code (main.js)
+    » Finally getting the data the client, we are giving response in order without knowing client with Facade pattern.
