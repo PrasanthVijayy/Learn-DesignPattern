@@ -1,0 +1,28 @@
+👉 STRUCTURAL DESIGN PATTERN
+-----------------------------
+
+The Structural design pattern is used to assemble the classes & objects to form larger strucutre it also keeps structure efficient and flexible.
+
+
+1️⃣ Adapter Pattern:
+
+    » Adpater design pattern allows incompatible interfaces to work together. 
+    » It acts as a bridge between two incompatible interfaces of a class into another interface that client expects.
+
+Example:
+
+    » If I want to use a system API which will responds with XML data, but our current system (interface) will require
+    as JSON data structure to work with it, in that case Adapter pattern will work as bridge between 2 interface and make it work by converting it to JSON.
+
+
+2️⃣ Decorator Pattern:
+
+    » Decorator design pattern allows to add additonal behaviour to objects and finally wrapping them as additional functionality.
+
+Example:
+
+    » Initially created a base class "Coffee" with cost function 10/-
+    » After that created some classes with decorator pattern by adding additional toppings of cream 5/-
+    » Then Sugar class as additional 2/-
+    » Finally Ice class with additonal 1/-
+    » If we run it, the cost is getting added up setup by step!
