@@ -1,0 +1,6 @@
+👉 ABSTRACT FACTORY DESIGN PATTERN - CREATIONAL PATTERN 👈
+------------------------------------
+
+Abstract factory pattern is similar to factory design pattern.
+
+It is used to create factories of realted objects without specifying the concrete classes.
