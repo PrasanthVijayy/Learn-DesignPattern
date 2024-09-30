@@ -1,12 +1,12 @@
 👉 STRUCTURAL DESIGN PATTERN
 -----------------------------
 
-The Structural design pattern is used to assemble the classes & objects to form larger strucutre it also keeps structure efficient and flexible.
+The Structural design pattern is used to assemble the classes & objects to form larger structure it also keeps structure efficient and flexible.
 
 
 1️⃣ Adapter Pattern:
 
-    » Adpater design pattern allows incompatible interfaces to work together. 
+    » Adapter design pattern allows incompatible interfaces to work together. 
     » It acts as a bridge between two incompatible interfaces of a class into another interface that client expects.
 
 Example:
@@ -17,24 +17,24 @@ Example:
 
 2️⃣ Decorator Pattern:
 
-    » Decorator design pattern allows to add additonal behaviour to objects and finally wrapping them as additional functionality.
+    » Decorator design pattern allows to add additional behaviour to objects and finally wrapping them as additional functionality.
 
 Example:
 
     » Initially created a base class "Coffee" with cost function 10/-
     » After that created some classes with decorator pattern by adding additional toppings of cream 5/-
     » Then Sugar class as additional 2/-
-    » Finally Ice class with additonal 1/-
+    » Finally Ice class with additional 1/-
     » If we run it, the cost is getting added up setup by step!
 
 3️⃣ Facade Pattern:
 
-    » The Facade design pattern which provides a simplifed interface to complex subsystem.
+    » The Facade design pattern which provides a simplified interface to complex subsystem.
 
 Example:
 
     » Here I created a homeTheatre setup with 5 subsystems.
-    » Subsytems are: Lights, Projector, DVD player, Snacks, SoundSystem.
+    » Subsystems are: Lights, Projector, DVD player, Snacks, SoundSystem.
     » Here I just created simple functionality to all subsystems as separate files.
     » With Facade pattern (movieFacade.js) I made all interactions simple before bring to client code (main.js)
     » Finally getting the data the client, we are giving response in order without knowing client with Facade pattern.
@@ -42,10 +42,21 @@ Example:
 4️⃣ Composite Pattern:
 
     » The Composite design pattern is simpler to "hierarchical inheritance" (in structure wise).
-    » Components required: Component (base class), Leaf (least object, indivisible) & Composite (Aggregate objects that contain other objects and leafs).
+    » Components required: Component (base class), Leaf (least object, indivisible) & Composite (Aggregate objects that contain other objects and leaf's).
 
 Example:
 
     » Here I created a file system as hierarchical way.
-    » Where the Comnponent (component.js), Composite (Folder.js) & Lead (File.js)
+    » Where the Component (component.js), Composite (Folder.js) & Lead (File.js)
     » Finally we can just create files and folder and call the showDetails() in client code (app.js) 
+
+
+5️⃣ bridge Pattern:
+
+    » The Bridge design pattern is used to separate abstraction from it's implementation so that they can be independent.
+
+Example:
+
+    » Here I created a file remoteControl.js for abstraction type. 
+    » Also created a file device.js implementation type.
+    » Finally we are bridge done with abstraction file.
