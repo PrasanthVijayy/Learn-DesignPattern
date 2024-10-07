@@ -51,7 +51,7 @@ Example:
     » Finally we can just create files and folder and call the showDetails() in client code (app.js) 
 
 
-5️⃣ bridge Pattern:
+5️⃣ Bridge Pattern:
 
     » The Bridge design pattern is used to separate abstraction from it's implementation so that they can be independent.
 
@@ -60,3 +60,26 @@ Example:
     » Here I created a file remoteControl.js for abstraction type. 
     » Also created a file device.js implementation type.
     » Finally we are bridge done with abstraction file.
+
+
+
+5️⃣ Flyweight Pattern:
+
+    » The Flyweight design pattern is used to minimize the worload to RAM.
+    » It will separate as intrinsic (shared and unchange of data) and extrinstic state (Unique, differs between data by changing some attributes)
+
+    Intrinsic vs. Extrinsic State
+    
+    Intrinsic State:
+        -> These are the properties that are shared and do not change between different objects of the same type. 
+        -> In the Flyweight pattern, intrinsic states are stored inside the flyweight object itself. They represent essential, constant characteristics of the object.
+    
+    Extrinsic State:
+        -> These are properties that can change and are provided externally when the object is used. 
+        -> Extrinsic states are passed in as arguments to methods, so they don’t need to be stored inside the object.
+
+Example:
+
+    » Here I have created the intrinsic type (class.js) where it has color attribute remains unchanged once declared also position are extrinstic state will not stored in object.
+    » With the client code, even if they try to create the different object, different postition and same color.
+    » By just changing the new object's position, hence new object won't be created and just returning it.
