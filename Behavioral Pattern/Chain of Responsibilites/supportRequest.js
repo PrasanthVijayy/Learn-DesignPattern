@@ -1,4 +1,4 @@
-// Creating a chain for attain support team
+// Creating a chain for attaining support team
 
 class supportHandler {
   constructor(nextHandler) {
@@ -8,9 +8,11 @@ class supportHandler {
   // Method to handle the request
   handleRequest(request, type) {
     if (this.nextHandler) {
-      console.log("Passing to next executive team to resolve your issue");
+      console.log("Passing to the next executive team to resolve your issue");
+      this.nextHandler.handleRequest(request, type);
+    } else {
+      console.log("No further handlers available to process the request.");
     }
-    this.nextHandler.handleRequest(request, type);
   }
 }
 
@@ -18,15 +20,17 @@ class supportHandler {
 class InternetConnectionTeam extends supportHandler {
   handleRequest(request, type) {
     if (request === "internet" && type === "newConnection") {
-      console.log("Your newConnection request is taken. Thankyou! 🙂");
+      console.log("Your newConnection request is taken. Thank you! 🙂");
     } else if (request === "internet" && type === "problem") {
-      console.log("Seems you have issue, we will redirect to support team");
-      super.handleRequest(request, type); // Transfering to the next team
+      console.log(
+        "Seems you have an issue; we will redirect to the support team"
+      );
+      super.handleRequest(request, type); // Transferring to the next team
     } else {
       console.log(
-        "Unknown request type, we will transfer your request to next team! 👍"
+        "Unknown request type in InternetConnectionTeam. Passing to next team."
       );
-      super.handleRequest(request, type); // Transfering to the next team
+      super.handleRequest(request, type); // Transfer to the next team
     }
   }
 }
@@ -35,12 +39,12 @@ class InternetConnectionTeam extends supportHandler {
 class InternetSupportTeam extends supportHandler {
   handleRequest(request, type) {
     if (request === "internet" && type === "problem") {
-      console.log("Your internet request is taken. Thankyou! 🙂");
+      console.log("Your internet request is taken. Thank you! 🙂");
     } else {
       console.log(
-        "Unknown request type, we will transfer your request to next team! 👍"
+        "Unknown request type in InternetSupportTeam. Passing to next team."
       );
-      super.handleRequest(request, type); // Transfering to the next team
+      super.handleRequest(request, type); // Transferring to the next team
     }
   }
 }
@@ -49,17 +53,17 @@ class InternetSupportTeam extends supportHandler {
 class PhoneConnectionTeam extends supportHandler {
   handleRequest(request, type) {
     if (request === "phone" && type === "newConnection") {
-      console.log("Your newConnection request is taken. Thankyou 🙂");
+      console.log("Your newConnection request is taken. Thank you! 🙂");
     } else if (request === "phone" && type === "problem") {
       console.log(
-        "Seems you are facing issue with phone, we will redirect to phone support team"
+        "Seems you have an issue; we will redirect to the support team"
       );
-      super.handleRequest(request, type); // Transfering to the next team
+      super.handleRequest(request, type); // Transferring to the next team
     } else {
       console.log(
-        "Unknown request type, we will transfer your request to next team! 👍"
+        "Unknown request type in PhoneConnectionTeam. Passing to next team."
       );
-      super.handleRequest(request, type); // Transfering to the next team
+      super.handleRequest(request, type); // Transferring to the next team
     }
   }
 }
@@ -68,16 +72,16 @@ class PhoneConnectionTeam extends supportHandler {
 class PhoneSupportTeam extends supportHandler {
   handleRequest(request, type) {
     if (request === "phone" && type === "problem") {
-      console.log("Your phone request is taken. Thankyou 🙂");
+      console.log("Your phone request is taken. Thank you! 🙂");
     } else {
       console.log(
-        "Unknown request type, please specify your problem correctly! 👍"
+        "Unknown request type in PhoneSupportTeam. This is the last support level."
       );
-      super.handleRequest(request, type); // Transfering to the next team
     }
   }
 }
 
+// Main module export
 module.exports = {
   InternetConnectionTeam,
   InternetSupportTeam,

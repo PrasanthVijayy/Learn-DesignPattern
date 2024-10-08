@@ -41,3 +41,7 @@
     Provides a surrogate or placeholder for another object to control access to it, enabling lazy loading, access control, or logging.
 
 3️⃣ Behavioural Patterns:
+    These patterns focus on communication and the interaction between objects. They help to define the flow of control and data in complex systems.
+
+1. Chain of Responsibility:
+    This type of pattern will let you pass request as a chain (handlers). Each handler will decide to pass or reject based on some conditions.
