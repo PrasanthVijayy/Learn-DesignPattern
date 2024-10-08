@@ -45,3 +45,9 @@
 
 1. Chain of Responsibility:
     This type of pattern will let you pass request as a chain (handlers). Each handler will decide to pass or reject based on some conditions.
+
+2. Command:
+    This type of pattern will help to perform and display the result based on same commands as mediator.
+
+4️⃣ Iterator Pattern:
+    This pattern focuses on traverse collection without exposing their internal structures.

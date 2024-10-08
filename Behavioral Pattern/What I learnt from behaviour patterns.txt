@@ -1,0 +1,35 @@
+👉 BEHAVIOUR DESIGN PATTERN
+-----------------------------
+
+These patterns focus on communication and the interaction between objects. They help objects cooperate by defining the flow of control and data in complex systems.
+
+1️⃣ Chain of Responsibility:
+
+    » Chain of Responsibility pattern will allow the request to handle through chains. 
+    » Each chain (handlers) will decide to pass or reject the value to next chain.
+
+
+Example:
+
+    » Here we habe created 5 (1 main 4 inherit classes). Where the main class defines the how the value should be check and proceed for result (pass / reject).
+    » Our example is about connecting to proper supportRequest team based on client request.
+
+2️⃣ Command Pattern:
+
+    » Command pattern is used to improve the decoupling of between sender and receiver through commands. After the command execute the other actions will be performed.
+    » Command Pattern has 4 components: 
+        Command()   -> A object encapsulate the request and have execute() method to perform.
+        Invoker()   -> Call the command execute method whenever the action is needed.
+        Receiver()  -> All logic will be implemented here
+        Client      -> Create the invoker and command as objects.
+
+Example:
+
+    » I have created a simple appliances on / off method in receiver. From client code I have created the objects for both commands and invoker.
+
+2️⃣ Iterator Pattern:
+    » Iterator Pattern is used to provide a way to access the elements of a collection sequentially without exposing its underlying representation (like an array or list). This pattern helps in decoupling the traversal logic from the collection structure, allowing for a more flexible and manageable way to iterate over different types of collections.
+    »Iterator Pattern has 3 main components:
+        Iterator: This interface defines the methods for accessing and traversing the elements in a collection, typically including methods like hasNext() and next().
+        Concrete Iterator: This class implements the Iterator interface and maintains the current position in the iteration over the collection.
+        Aggregate: This interface defines a method for creating an iterator. It may also have methods to manage the collection (like adding or removing items)  provides a concrete implementation of the collection, allowing an iterator to traverse its items.
