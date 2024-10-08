@@ -63,7 +63,7 @@ Example:
 
 
 
-5️⃣ Flyweight Pattern:
+6️⃣ Flyweight Pattern:
 
     » The Flyweight design pattern is used to minimize the worload to RAM.
     » It will separate as intrinsic (shared and unchange of data) and extrinstic state (Unique, differs between data by changing some attributes)
@@ -83,3 +83,7 @@ Example:
     » Here I have created the intrinsic type (class.js) where it has color attribute remains unchanged once declared also position are extrinstic state will not stored in object.
     » With the client code, even if they try to create the different object, different postition and same color.
     » By just changing the new object's position, hence new object won't be created and just returning it.
+
+7️⃣ Proxy Pattern:
+
+    » This pattern will create as surrogate object from some other object, it can be access easily without puting to much load on actual object.

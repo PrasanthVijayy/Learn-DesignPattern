@@ -1,0 +1,43 @@
+ 1️⃣ Creational Patterns:
+    These types of pattern basically focuses on creation of objects, ensuring the objects are created in controlled manner.
+
+1. Singleton: 
+    Ensures a class has only one instance and provides a global point of access to it.
+
+2. Factory Method: 
+    Defines an interface for creating an object but allows subclasses to alter the type of objects that will be created.
+
+3. Abstract Factory: 
+    Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+4. Builder: 
+    Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+
+5. Prototype: 
+    Allows cloning of existing objects without modifying the original object, promoting object reuse.
+
+2️⃣ Structural Patterns:
+    Structural design pattern focuses on relationship between the classes and objects.
+
+1. Adapter: 
+    Allows incompatible interfaces to work together by converting the interface of a class into another interface that clients expect.
+
+2. Bridge: 
+    Separates an object’s abstraction from its implementation so that both can vary independently.
+
+3. Composite: 
+    Composes objects into tree structures to represent part-whole hierarchies, allowing clients to treat individual objects and compositions uniformly.
+
+4. Decorator: 
+    Adds new functionalities to an object dynamically without altering its structure, enhancing its behavior.
+
+5. Facade: 
+    Provides a simplified interface to a complex subsystem, making it easier for clients to interact with the system.
+
+6. Flyweight: 
+    Reduces memory usage by sharing common parts of state among multiple objects, allowing for efficient management of large quantities of similar objects.
+
+7. Proxy: 
+    Provides a surrogate or placeholder for another object to control access to it, enabling lazy loading, access control, or logging.
+
+3️⃣ Behavioural Patterns:
