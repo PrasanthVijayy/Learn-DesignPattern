@@ -13,3 +13,16 @@ Example:
 
     » Here we habe created 5 (1 main 4 inherit classes). Where the main class defines the how the value should be check and proceed for result (pass / reject).
     » Our example is about connecting to proper supportRequest team based on client request.
+
+2️⃣ Command Pattern:
+
+    » Command pattern is used to improve the decoupling of between sender and receiver through commands. After the command execute the other actions will be performed.
+    » Command Pattern has 4 components: 
+        Command()   -> A object encapsulate the request and have execute() method to perform.
+        Invoker()   -> Call the command execute method whenever the action is needed.
+        Receiver()  -> All logic will be implemented here
+        Client      -> Create the invoker and command as objects.
+
+Example:
+
+    » I have created a simple appliances on / off method in receiver. From client code I have created the objects for both commands and invoker.
