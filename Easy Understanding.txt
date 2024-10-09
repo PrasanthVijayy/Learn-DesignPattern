@@ -57,3 +57,7 @@
 
 5. Memento:
     Pattern which stores the previous save and restore the previous state of an object without revealing the details of implementation.
+
+6. Observer:
+    Obeserver pattern is one to many relationship.
+    In easier way, realtionshio between youtube channel and subscribers (us) where we are notified only after we are pressing the bell icon.
