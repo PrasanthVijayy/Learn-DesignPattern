@@ -61,3 +61,6 @@
 6. Observer:
     Obeserver pattern is one to many relationship.
     In easier way, realtionshio between youtube channel and subscribers (us) where we are notified only after we are pressing the bell icon.
+
+7. State:
+    State pattern is similar to if-else condition, where it will work efficiently if multiple conditions are need to assign.
