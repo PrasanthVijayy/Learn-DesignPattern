@@ -54,3 +54,6 @@
 
 4. Mediator:
     This pattern is like a common person who takes are communication between other objects (a medium).
+
+5. Memento:
+    Pattern which stores the previous save and restore the previous state of an object without revealing the details of implementation.
