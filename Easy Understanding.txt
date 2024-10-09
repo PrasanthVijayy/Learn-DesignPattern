@@ -49,5 +49,8 @@
 2. Command:
     This type of pattern will help to perform and display the result based on same commands as mediator.
 
-4️⃣ Iterator Pattern:
+3. Iterator:
     This pattern focuses on traverse collection without exposing their internal structures.
+
+4. Mediator:
+    This pattern is like a common person who takes are communication between other objects (a medium).
