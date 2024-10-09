@@ -15,3 +15,14 @@ weatherStation.addObserver(mobileUI);
 // Change the temperature
 weatherStation.setTemperature(25); // Notify the data all observers  
 weatherStation.setTemperature(30); // Notify the updated data all observers
+
+
+// Adding another observer
+const webUI2 = new WebUI();
+weatherStation.addObserver(webUI2);
+weatherStation.setTemperature(35);
+
+
+// Removing an observer
+weatherStation.removeObserver(webUI);
+weatherStation.setTemperature(40);
