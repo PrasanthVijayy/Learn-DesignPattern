@@ -27,7 +27,7 @@ Example:
 
     » I have created a simple appliances on / off method in receiver. From client code I have created the objects for both commands and invoker.
 
-2️⃣ Iterator Pattern:
+3️⃣ Iterator Pattern:
 
     » Iterator Pattern is used to provide a way to access the elements of a collection sequentially without exposing its underlying representation (like an array or list). This pattern helps in decoupling the traversal logic from the collection structure, allowing for a more flexible and manageable way to iterate over different types of collections.
     » Iterator Pattern has 3 main components:
@@ -35,10 +35,14 @@ Example:
         Concrete Iterator: This class implements the Iterator interface and maintains the current position in the iteration over the collection.
         Aggregate: This interface defines a method for creating an iterator. It may also have methods to manage the collection (like adding or removing items)  provides a concrete implementation of the collection, allowing an iterator to traverse its items.
 
-3️⃣ Mediator Pattern:
+4️⃣ Mediator Pattern:
 
     » This pattern reduces confusion between objects. Restricts direct communication between objects and communicate through mediator object.
 
 Example:
     » Create a small chatting program, where added group `RoomChat` and added methods to register & send.
     » All transcation will be passes through mediator object and send and display those message to others.
+
+5️⃣ Memento Pattern:
+
+    » Memento is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
