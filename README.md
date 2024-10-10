@@ -1,5 +1,3 @@
-Certainly! Here's a plain explanation of the main categories of design patterns:
-
 ## 1. Creational Patterns
 Creational patterns focus on object creation mechanisms, providing ways to create objects suited to the situation, increasing flexibility and reuse of code.
 
