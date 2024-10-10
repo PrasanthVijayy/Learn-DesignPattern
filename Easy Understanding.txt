@@ -67,3 +67,6 @@
 
 8. Strategy:
     Set some strategies and runs when user wants to implement in a particular method.
+
+9. Template: 
+    Basically a temaplate to use whenever we want also we can modify the template.

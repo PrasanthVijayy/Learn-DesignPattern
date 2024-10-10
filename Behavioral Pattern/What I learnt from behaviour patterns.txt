@@ -81,3 +81,11 @@ Example:
 Example:
         » Here I have created a payment (strategy interface) and shoppingCart (context interface).
         » Once the client code is product (item & price) along with the payment method and details, with that paymentMethod instance will call the strategy to run it's algorithm / functionality.
+
+
+9️⃣ Template Pattern:
+
+    » Template pattern is used to have algorithms as skeleton template, where we can modify if needed from subClasses.
+
+Example:
+    » Create a template file (beverages.js) where I have made most of the methods. Also make some methods to implement (modify).
