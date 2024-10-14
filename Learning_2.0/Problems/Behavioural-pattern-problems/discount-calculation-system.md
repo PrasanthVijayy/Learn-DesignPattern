@@ -27,16 +27,8 @@ This project implements a **Discount Calculation System** for an e-commerce plat
      - **RegularCustomer**: No discount.
      - **PremiumCustomer**: 10% discount.
      - **VIPCustomer**: 20% discount.
-
-4. **Strategy (SeasonalDiscountStrategy)**  
-   - Defines the interface for seasonal discount calculation.  
-   - Provides a method to calculate the additional discount during seasonal events.
-
-5. **Concrete Strategies for Seasonal Events (NoSeasonalDiscount, HolidayDiscount, ClearanceSaleDiscount)**  
-   - Implements the seasonal discount calculation:
-     - **NoSeasonalDiscount**: No additional discount.
-     - **HolidayDiscount**: 5% additional discount for all customer types.
-     - **ClearanceSaleDiscount**: 15% additional discount for all customer types.
+     - **EliteCustomer**: 30% discount.
+     - **ClearnceSale**: 50% discount (additional discount is applicable).
 
 ## How to Use
 
