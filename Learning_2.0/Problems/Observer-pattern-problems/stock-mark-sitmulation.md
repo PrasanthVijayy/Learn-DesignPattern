@@ -39,4 +39,4 @@ The project is organized into the following components:
 
 ## Solution
 
-You can find the solution to this problem in the [solutions folder](/Solutions/observerPattern/stock-market-sitmulation/).
+You can find the solution to this problem in the [solution folder](/Learning_2.0/Solutions/observerPattern/stock-market-sitmulation/).
