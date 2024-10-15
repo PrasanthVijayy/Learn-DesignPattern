@@ -46,4 +46,4 @@ The project is organized into the following components:
 
 ## Solution
 
-You can find the solution to this problem in the [solution folder](/Learning_2.0/Solutions/Behavioural-pattern-solutions/enhanced-notification-service-solution/).
+You can find the solution to this problem in the [solution folder](/Learning_2.0/Solutions/Creational-pattern-solutions/notification-service-solution/).
