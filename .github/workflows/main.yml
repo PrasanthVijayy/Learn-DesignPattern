@@ -3,10 +3,10 @@ name: JS Syntax Check
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - master
 
 jobs:
   syntax-check:
