@@ -1,0 +1,26 @@
+name: JS Syntax Check
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Check for syntax errors in JavaScript files
+      - name: Run JS Syntax Check
+        run: |
+          for file in $(find . -name "*.js"); do
+            echo "Checking $file for syntax errors..."
+            node --check "$file"
+          done
