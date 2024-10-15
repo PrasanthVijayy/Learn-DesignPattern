@@ -1,26 +1,30 @@
-name: JS Syntax Check
+name: Plain JS CI
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
-      - main
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  syntax-check:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      # Checkout the repository code
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      # Check for syntax errors in JavaScript files
-      - name: Run JS Syntax Check
+      
+      - name: Lint JavaScript files
         run: |
           for file in $(find . -name "*.js"); do
             echo "Checking $file for syntax errors..."
-            node --check "$file"
+            node -c $file || exit 1
+          done
+
+      - name: Verify text files
+        run: |
+          for file in $(find . -name "*.txt"); do
+            echo "Verifying $file exists..."
+            if [ ! -f "$file" ]; then exit 1; fi
           done
