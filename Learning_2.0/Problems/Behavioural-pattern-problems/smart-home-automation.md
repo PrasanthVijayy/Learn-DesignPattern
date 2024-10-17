@@ -16,9 +16,11 @@ This project implements the Command Pattern to create a Smart Home Automation Sy
 The project is organized into the following components:
 
 1. **Command Interface**
+
    - Defines a common interface for all command objects, ensuring they implement the `execute` and `undo` methods.
 
 2. **Concrete Command Classes**
+
    - **LightOnCommand**: Implements the Command interface to turn the light on.
    - **LightOffCommand**: Implements the Command interface to turn the light off.
    - **FanOnCommand**: Implements the Command interface to turn the fan on.
@@ -26,9 +28,11 @@ The project is organized into the following components:
    - **ThermostatSetCommand**: Implements the Command interface to set the thermostat to a specified temperature.
 
 3. **Receiver Classes**
+
    - Represents the actual smart devices (e.g., `Light`, `Fan`, `Thermostat`) that will be controlled by the commands.
 
 4. **Command Invoker**
+
    - Manages command execution, maintains a queue of commands, and handles the undo operation.
 
 5. **Client Code**

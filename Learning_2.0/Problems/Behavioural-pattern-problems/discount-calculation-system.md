@@ -13,16 +13,18 @@ This project implements a **Discount Calculation System** for an e-commerce plat
 
 ## Internal Structure
 
-1. **Context (DiscountCalculator)**  
-   - Holds a reference to the customer type discount strategy and seasonal discount strategy.  
+1. **Context (DiscountCalculator)**
+
+   - Holds a reference to the customer type discount strategy and seasonal discount strategy.
    - Provides methods to set or change these strategies dynamically.
    - Responsible for combining both discount strategies to calculate the final price.
 
-2. **Strategy (CustomerDiscountStrategy)**  
-   - Defines the interface for customer-type discount calculation.  
+2. **Strategy (CustomerDiscountStrategy)**
+
+   - Defines the interface for customer-type discount calculation.
    - Includes a method for calculating the base discount for each customer type.
 
-3. **Concrete Strategies for Customer Types (RegularCustomer, PremiumCustomer, VIPCustomer)**  
+3. **Concrete Strategies for Customer Types (RegularCustomer, PremiumCustomer, VIPCustomer)**
    - Implements the customer discount calculation for different customer types:
      - **RegularCustomer**: No discount.
      - **PremiumCustomer**: 10% discount.

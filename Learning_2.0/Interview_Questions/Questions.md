@@ -1,6 +1,6 @@
 # Design Patterns Questions
 
-This document contains a collection of questions related to various design patterns, categorized into General, Behavioral, Structural, Creational, and Advanced Questions with ***total 50 questions***
+This document contains a collection of questions related to various design patterns, categorized into General, Behavioral, Structural, Creational, and Advanced Questions with **_total 50 questions_**
 
 ## Common Design Pattern Questions
 

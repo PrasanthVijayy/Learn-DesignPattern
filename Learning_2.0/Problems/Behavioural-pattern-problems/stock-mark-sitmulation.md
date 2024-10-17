@@ -15,14 +15,17 @@ This project implements the Observer Pattern through a stock market simulation w
 The project is organized into the following components:
 
 1. **Subject (StockMarket)**
+
    - Responsible for maintaining a list of observers (investors).
    - Provides methods to register, unregister, and notify observers when stock prices change.
 
 2. **Observer (Investor)**
+
    - Defines the interface for observers that want to be notified of changes in the subject.
    - Implements the update method to receive stock price updates.
 
 3. **ConcreteSubject (ConcreteStockMarket)**
+
    - Implements the Subject interface and holds the state (stock prices).
    - Triggers notifications to observers when stock prices change.
 
