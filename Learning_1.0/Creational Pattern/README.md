@@ -4,6 +4,8 @@ Creational patterns focus on object creation mechanisms, providing ways to creat
 
 ## a. Singleton Pattern
 
+![Singleton Patterns Logo](/Learning_1.0/images/singleton_DP.webp =350x200)
+
 - **Purpose**: Ensures a class has only one instance and provides a global access point to that instance.
 - **Use Cases**: Configuration settings, logging, thread pools.
 - **Advantages**: Controlled access to a single instance, reduces namespace pollution.
