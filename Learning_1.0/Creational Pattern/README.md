@@ -3,8 +3,9 @@
 Creational patterns focus on object creation mechanisms, providing ways to create objects suited to the situation, increasing flexibility and reuse of code.
 
 ## a. Singleton Pattern
-
-![Singleton Patterns Logo](/Learning_1.0/images/singleton_DP.webp =350x200)
+<p align="center">
+  <img src="/Learning_1.0/images/singleton_DP.webp" alt="Singleton Patterns Logo" width="300" height="200">
+</p>
 
 - **Purpose**: Ensures a class has only one instance and provides a global access point to that instance.
 - **Use Cases**: Configuration settings, logging, thread pools.
